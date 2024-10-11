@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+nav{
+    align-self: flex-end;
+    margin-left: auto;
+}
