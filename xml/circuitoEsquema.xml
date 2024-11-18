@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuito xmlns="http://www.uniovi.es"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.uniovi.es circuito.xsd">
+<nombre>BARCELONA-CATALUNYA</nombre>
+<distancia unidades="km">4.657</distancia>
+<anchura unidades="m ">11.5</anchura>
+<fecha>2024-06-23</fecha>
+<hora_inicio>15:00:00</hora_inicio>
+<vueltas>66</vueltas>
+<localidad>Montmeló</localidad>
+<pais>España</pais>
+<referecias>
+    <referecia>https://www.formula1.com/en/racing/2024/spain/circuit</referecia>
+    <referecia>https://www.circuitcat.com/es/</referecia>
+    <referecia>https://es.wikipedia.org/wiki/Circuito_de_Barcelona-Cataluña</referecia>
+</referecias>
+<fotos>
+    <foto fuente="aerea.png"/> 
+    <foto fuente="curva.png"/> 
+</fotos>
+<videos>
+    <video fuente="video_circuito.mp4"/>
+</videos>
+<coordenadas>
+    <longitud>2.2610180344032336</longitud>
+    <latitud>41.569779740352196</latitud>
+    <altitud>120</altitud>
+</coordenadas>
+<tramos>
+    <tramo>
+        <largo unidades="km">0.68</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2565730613431656</longitud_tramo>
+            <latitud_tramo>41.56461703972818</latitud_tramo>
+            <altitud_tramo>112</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+
+    <tramo>
+        <largo unidades="km">0.1</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2553942835032132</longitud_tramo>
+            <latitud_tramo>41.56490681618961</latitud_tramo>
+            <altitud_tramo >114</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+
+    <tramo>
+        <largo unidades="km">0.16</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.253763865836293</longitud_tramo>
+            <latitud_tramo>41.564191486216856</latitud_tramo>
+            <altitud_tramo >120</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    
+    <tramo>
+        <largo unidades="km">0.1</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.252647038264751</longitud_tramo>
+            <latitud_tramo>41.564408026718475</latitud_tramo>
+            <altitud_tramo>124</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.11</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.252153184741254</longitud_tramo>
+            <latitud_tramo>41.56527606872172</latitud_tramo>
+            <altitud_tramo>124</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.11</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2523663559048788</longitud_tramo>
+            <latitud_tramo>41.566215858588656</latitud_tramo>
+            <altitud_tramo>128</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.27</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.254106531758979</longitud_tramo>
+            <latitud_tramo>41.56829107977528</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.05</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2546442895137844</longitud_tramo>
+            <latitud_tramo>41.56843863651552</latitud_tramo>
+            <altitud_tramo>132</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.06</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2552665900289606</longitud_tramo>
+            <latitud_tramo>41.56812403204922</latitud_tramo>
+            <altitud_tramo>133</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2553804023748105</longitud_tramo>
+            <latitud_tramo>41.567496696014224</latitud_tramo>
+            <altitud_tramo>133</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.24</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2539519856886248</longitud_tramo>
+            <latitud_tramo>41.565618113213176</latitud_tramo>
+            <altitud_tramo>128</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.05</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2544302196269577</longitud_tramo>
+            <latitud_tramo>41.56529036779712</latitud_tramo>
+            <altitud_tramo>125</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.19</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2565100129441977</longitud_tramo>
+            <latitud_tramo>41.56601493461828</latitud_tramo>
+            <altitud_tramo>115</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.18</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.257776327849178</longitud_tramo>
+            <latitud_tramo>41.56727457184752</latitud_tramo>
+            <altitud_tramo>115</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.04</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.257667612063516</longitud_tramo>
+            <latitud_tramo>41.567667257873794</latitud_tramo>
+            <altitud_tramo>117</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2570042628570937</longitud_tramo>
+            <latitud_tramo>41.568013156069625</latitud_tramo>
+            <altitud_tramo>121</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.23</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.255927068739747</longitud_tramo>
+            <latitud_tramo>41.569954924115585</latitud_tramo>
+            <altitud_tramo>134</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.256274414805861</longitud_tramo>
+            <latitud_tramo>41.57053384994935</latitud_tramo>
+            <altitud_tramo>136</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.54</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2619822687642874</longitud_tramo>
+            <latitud_tramo>41.57282010606185</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.04</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.261853522730924</longitud_tramo>
+            <latitud_tramo>41.573198348172454</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.09</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.260826151314798</longitud_tramo>
+            <latitud_tramo>41.57338996575543</latitud_tramo>
+            <altitud_tramo>133</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.12</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2595772387356847</longitud_tramo>
+            <latitud_tramo>41.57285315940184</latitud_tramo>
+            <altitud_tramo>138</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.06</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.25895527848759</longitud_tramo>
+            <latitud_tramo>41.57309508426015</latitud_tramo>
+            <altitud_tramo>140</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.06</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2588931472192937</longitud_tramo>
+            <latitud_tramo>41.57359174957612</latitud_tramo>
+            <altitud_tramo>141</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.19</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2606502474810104</longitud_tramo>
+            <latitud_tramo>41.57466686889643</latitud_tramo>
+            <altitud_tramo>138</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.13</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2619827669941155</longitud_tramo>
+            <latitud_tramo>41.57399877918098</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.04</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2623268626478614</longitud_tramo>
+            <latitud_tramo>41.574274298580164</latitud_tramo>
+            <altitud_tramo>130</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.13</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.263592271922297</longitud_tramo>
+            <latitud_tramo>41.573576404913595</latitud_tramo>
+            <altitud_tramo>125</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.263653976859242</longitud_tramo>
+            <latitud_tramo>41.572941080286476</latitud_tramo>
+            <altitud_tramo>123</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.41</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2.2610180344032336</longitud_tramo>
+            <latitud_tramo>41.569779740352196</latitud_tramo>
+            <altitud_tramo>120</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+</tramos>
+</circuito>

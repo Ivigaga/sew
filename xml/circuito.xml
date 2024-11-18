@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuito SYSTEM "circuito.dtd">
+<circuito>
+<nombre>BARCELONA-CATALUNYA</nombre>
+<distancia unidades="km">4.657</distancia>
+<anchura unidades="m ">11.5</anchura>
+<fecha>23/06/2024</fecha>
+<hora_inicio>15:00</hora_inicio>
+<vueltas>66</vueltas>
+<localidad>Montmeló</localidad>
+<pais>España</pais>
+<referecias>
+    <referecia>https://www.formula1.com/en/racing/2024/spain/circuit</referecia>
+    <referecia>https://www.circuitcat.com/es/</referecia>
+    <referecia>https://es.wikipedia.org/wiki/Circuito_de_Barcelona-Cataluña</referecia>
+</referecias>
+<fotos>
+    <foto fuente="aerea"/>
+    <foto fuente="curva"/> 
+</fotos>
+<videos>
+    <video fuente="video_circuito"/>
+</videos>
+<coordenadas>
+    <longitud>2°15'28.3"E</longitud>
+    <latitud>41°34'10.8"N</latitud>
+    <altitud>125</altitud>
+</coordenadas>
+<tramos>
+    <tramo>
+        <largo unidades="km">0.68</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 23.663" E</longitud_tramo>
+            <latitud_tramo>41° 33' 52.621" N</latitud_tramo>
+            <altitud_tramo>112</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+
+    <tramo>
+        <largo unidades="km">0.1</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 19.419" E</longitud_tramo>
+            <latitud_tramo>41° 33' 53.664" N</latitud_tramo>
+            <altitud_tramo >114</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+
+    <tramo>
+        <largo unidades="km">0.16</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 13.550" E</longitud_tramo>
+            <latitud_tramo>41° 33' 51.089" N</latitud_tramo>
+            <altitud_tramo >120</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    
+    <tramo>
+        <largo unidades="km">0.1</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>41° 33' 51.869" N</longitud_tramo>
+            <latitud_tramo> 2° 15' 9.529" E</latitud_tramo>
+            <altitud_tramo>124</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.11</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 7.752" E</longitud_tramo>
+            <latitud_tramo>41° 33' 54.994" N</latitud_tramo>
+            <altitud_tramo>124</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.11</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 8.519" E</longitud_tramo>
+            <latitud_tramo>41° 33' 58.377" N</latitud_tramo>
+            <altitud_tramo>128</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.27</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 14.783" E</longitud_tramo>
+            <latitud_tramo>41° 34' 5.848" N</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>1</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.05</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 16.719" E</longitud_tramo>
+            <latitud_tramo>41° 34' 6.379" N</latitud_tramo>
+            <altitud_tramo>132</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.06</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 18.960" E</longitud_tramo>
+            <latitud_tramo>41° 34' 5.246" N</latitud_tramo>
+            <altitud_tramo>133</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 19.369" E</longitud_tramo>
+            <latitud_tramo>41° 34' 2.988" N</latitud_tramo>
+            <altitud_tramo>133</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.24</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 14.227" E</longitud_tramo>
+            <latitud_tramo>41° 33' 56.225" N</latitud_tramo>
+            <altitud_tramo>128</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.05</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 15.949" E</longitud_tramo>
+            <latitud_tramo>41° 33' 55.045" N</latitud_tramo>
+            <altitud_tramo>125</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.19</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 23.436" E</longitud_tramo>
+            <latitud_tramo>41° 33' 57.654" N</latitud_tramo>
+            <altitud_tramo>115</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.18</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 27.995" E</longitud_tramo>
+            <latitud_tramo>41° 34' 2.189" N</latitud_tramo>
+            <altitud_tramo>115</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.04</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 27.603" E</longitud_tramo>
+            <latitud_tramo>41° 34' 3.602" N</latitud_tramo>
+            <altitud_tramo>117</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 25.215" E</longitud_tramo>
+            <latitud_tramo>41° 34' 4.848" N</latitud_tramo>
+            <altitud_tramo>121</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.23</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 21.338" E</longitud_tramo>
+            <latitud_tramo>41° 34' 11.838" N</latitud_tramo>
+            <altitud_tramo>134</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 22.588" E</longitud_tramo>
+            <latitud_tramo>41° 34' 13.922" N</latitud_tramo>
+            <altitud_tramo>136</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.54</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 43.136" E</longitud_tramo>
+            <latitud_tramo>41° 34' 22.152" N</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>2</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.04</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 42.673" E</longitud_tramo>
+            <latitud_tramo>41° 34' 23.514" N</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.09</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 38.974" E</longitud_tramo>
+            <latitud_tramo>41° 34' 24.204" N</latitud_tramo>
+            <altitud_tramo>133</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.12</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 34.478" E</longitud_tramo>
+            <latitud_tramo>41° 34' 22.272" N</latitud_tramo>
+            <altitud_tramo>138</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.06</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 32.239" E</longitud_tramo>
+            <latitud_tramo>41° 34' 23.142" N</latitud_tramo>
+            <altitud_tramo>140</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.06</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 32.015" E</longitud_tramo>
+            <latitud_tramo>41° 34' 24.930" N</latitud_tramo>
+            <altitud_tramo>141</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.19</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 38.341" E</longitud_tramo>
+            <latitud_tramo>41° 34' 28.801" N</latitud_tramo>
+            <altitud_tramo>138</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.13</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 43.138" E</longitud_tramo>
+            <latitud_tramo>41° 34' 26.396" N</latitud_tramo>
+            <altitud_tramo>131</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.04</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 44.377" E</longitud_tramo>
+            <latitud_tramo>41° 34' 27.387" N</latitud_tramo>
+            <altitud_tramo>130</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.13</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 48.932" E</longitud_tramo>
+            <latitud_tramo>41° 34' 24.875" N</latitud_tramo>
+            <altitud_tramo>125</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.07</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 49.154" E</longitud_tramo>
+            <latitud_tramo>41° 34' 22.588" N</latitud_tramo>
+            <altitud_tramo>123</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+    <tramo>
+        <largo unidades="km">0.41</largo>
+        <coordenadas_tramo>
+            <longitud_tramo>2° 15' 39.665" E</longitud_tramo>
+            <latitud_tramo>41° 34' 11.207" N</latitud_tramo>
+            <altitud_tramo>120</altitud_tramo>
+        </coordenadas_tramo>
+        <sector>3</sector>
+    </tramo>
+</tramos>
+</circuito>

@@ -1,0 +1,40 @@
+<!ELEMENT circuito (nombre,distancia,anchura,fecha,hora_inicio,vueltas,localidad,pais,referecias,fotos,videos,coordenadas,tramos)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT distancia (#PCDATA)>
+<!ELEMENT anchura (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT hora_inicio (#PCDATA)>
+<!ELEMENT vueltas (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT referecias (referecia+)>
+<!ELEMENT referecia (#PCDATA)>
+<!ELEMENT fotos (foto+)>
+<!ELEMENT foto EMPTY>
+<!ELEMENT videos (video*)>
+<!ELEMENT video EMPTY>
+<!ELEMENT coordenadas (longitud,latitud,altitud)>
+<!ELEMENT longitud (#PCDATA)>
+<!ELEMENT latitud (#PCDATA)>
+<!ELEMENT altitud (#PCDATA)>
+<!ELEMENT tramos (tramo+)>
+<!ELEMENT tramo (largo, coordenadas_tramo,sector)>
+<!ELEMENT largo (#PCDATA)>
+<!ELEMENT coordenadas_tramo (longitud_tramo,latitud_tramo,altitud_tramo)>
+<!ELEMENT longitud_tramo (#PCDATA)>
+<!ELEMENT latitud_tramo (#PCDATA)>
+<!ELEMENT altitud_tramo (#PCDATA)>
+<!ELEMENT sector (#PCDATA)>
+
+<!ATTLIST distancia unidades CDATA #REQUIRED>
+<!ATTLIST anchura unidades CDATA #REQUIRED>
+<!ATTLIST foto fuente ENTITY #REQUIRED>
+<!ATTLIST video fuente ENTITY #REQUIRED>
+<!ATTLIST largo unidades CDATA #REQUIRED>
+<!ENTITY aerea SYSTEM "aerea.png" NDATA png>
+<!ENTITY curva SYSTEM "curva.png" NDATA png>
+<!ENTITY foto3 SYSTEM "foto3.png" NDATA png>
+<!NOTATION png SYSTEM "image/png">
+
+<!ENTITY video_circuito SYSTEM "circuito.mp4" NDATA mp4>
+<!NOTATION mp4 SYSTEM "video/mp4">
