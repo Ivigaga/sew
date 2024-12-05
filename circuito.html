@@ -12,6 +12,11 @@
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
     <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU" async defer></script>
+    <script src="js/circuito.js"></script>
     <title>F1 Desktop: Circuito</title>
 </head>
 
@@ -26,12 +31,17 @@
             <a title="Calendario" href="calendario.html">Calendario</a>
             <a title="Meteorología" href="meteorologia.html">Meteorología</a>
             <a title="Circuito" class="active" href="circuito.html">Circuito</a>
-            <a title="Viajes" href="viajes.html">Viajes</a>
+            <a title="Viajes" href="viajes.php">Viajes</a>
             <a title="Juegos" href="juegos.html">Juegos</a>
         </nav>
     </header>
     <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | Circuito </p>
     <h2>Circuito</h2>
-    <p>En desarrollo</p>
+    <p>
+        <input type="file" id="archivoTexto" onchange="new Circuito().leerArchivoTexto(this.files)"/>
+    </p>
+    <p></p>
+    <div id="mapa"></div>
+    
 </body>
 </html>

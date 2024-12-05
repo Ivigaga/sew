@@ -11,7 +11,11 @@
         type="image/vnd.microsoft.icon">
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/article_elements.css" />
     <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/pais.js"></script>
     <title>F1 Desktop: Meteorología</title>
 </head>
 
@@ -26,12 +30,23 @@
             <a title="Calendario" href="calendario.html">Calendario</a>
             <a title="Meteorología" class="active" href="meteorologia.html">Meteorología</a>
             <a title="Circuito" href="circuito.html">Circuito</a>
-            <a title="Viajes" href="viajes.html">Viajes</a>
+            <a title="Viajes" href="viajes.php">Viajes</a>
             <a title="Juegos" href="juegos.html">Juegos</a>
         </nav>
     </header>
     <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | Meteorología </p>
     <h2>Meteorología</h2>
     <p>En desarrollo</p>
+    <script>
+        var pais=new Pais();
+        pais.setInfoBasica("España","Madrid",48797875);
+        pais.setInfoAdiccional("BARCELONA-CATALUNYA","Monarquia Parlamentaria","41.569779740352196,2.2610180344032336,120","Catolicismo");
+        document.write("<p>País: "+pais.getNombre()+"</p>");
+        document.write("<p>Capital: "+pais.getCapital()+"</p>");
+        document.write(pais.getInfoSecundaria());
+        pais.writeCoordenadas();
+        pais.mostrarTiempo();
+    </script>
+    <p></p>
 </body>
 </html>

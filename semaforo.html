@@ -1,18 +1,20 @@
 <!DOCTYPE HTML>
-
 <html lang="es">
 <head>
     <meta name="author" content="Iván García García" />
-    <meta name="description" content="Juegos" />
-    <meta name="keywords" content="F1,juegos" />
+    <meta name="description" content="Juego de Memoria" />
+    <meta name="keywords" content="F1,juegos, semáforo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Datos que describen el documento -->
     <link rel="icon" href="multimedia/imagenes/icono.ico" sizes="48x48" 
         type="image/vnd.microsoft.icon">
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
     <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/semaforo.css" />
     <meta charset="UTF-8" />
-    <title>F1 Desktop: Juegos</title>
+    <script src="js/semaforo.js"></script>
+    <title>F1 Desktop: Semáforo</title>
+    
 </head>
 
 <body>
@@ -30,11 +32,15 @@
             <a title="Juegos" class="active" href="juegos.html">Juegos</a>
         </nav>
     </header>
-    <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | Juegos </p>
-    <h2>Juegos</h2>
+    <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | <a title="Juegos" href="juegos.html">Juegos</a>  | Semáforo</p>
     <nav>
         <a title="Memoria" href="memoria.html">Memoria</a>
         <a title="Semáforo" href="semaforo.php">Semáforo</a>
     </nav>
+    <main>
+    <script>
+        var semaforo=new Semaforo();
+    </script>
+    </main>
 </body>
 </html>
