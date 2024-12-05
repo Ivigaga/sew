@@ -7,6 +7,7 @@ body {
     background-color: #ebe8e0;
     color: #0a0a00;
 }
+
 /*Especificidad 001*/
 header{
     /*background-color: #d01110;*/
@@ -22,10 +23,12 @@ header a{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 /*Especificidad 002*/
 header + p{
     font-size: small;
 }
+
 /*Especificidad 001*/
 a{
     /*Hereda el color de fondo de body*/
@@ -50,14 +53,15 @@ ol{
 ol ul{
     list-style:disc;
 }
-
+/*Especificidad 002*/
 dl dt{
     font-weight: bold;
 }
+/*Especificidad 002*/
 dl dd{
     font-style: italic;
 }
-
+/*Especificidad 001*/
 table {
     border-collapse: collapse;
     width: 24%;
@@ -66,7 +70,7 @@ table {
     border-color: #0a0a00;
     
 }
-
+/*Especificidad 002*/
 table td{
     text-align: center;
     border-style: solid;
@@ -74,24 +78,24 @@ table td{
     border-color: #0a0a00;
     
 }
-
+/*Especificidad 002*/
 table th{
     border-style: solid;
     border-width: 1px;
     border-color: #0a0a00;
 }
-
+/*Especificidad 011*/
 th:nth-child(2) {
     text-align: center;
 }
-
+/*Especificidad 001*/
 video{
     width: 70%;
     height:auto;
     padding-left: 15%;
 }
 
-
+/*Especificidad 011*/
 a.active{
     background-color: #ebe8e0;
     color: #0a0a00;
@@ -99,17 +103,18 @@ a.active{
 }
 
 @media screen and (max-width: 480px) {
+    /*Especificidad 002*/
     header + p{
         display: none;
     }
-
+    /*Especificidad 002*/
     header nav{
         font-size: 0.75em;
     }
 }
 
 @media screen and (min-width: 481px) and (max-width: 530px) {
-
+    /*Especificidad 001*/
     nav{
         font-size: 0.8em;
     }
@@ -117,7 +122,22 @@ a.active{
 
 @media screen and (min-width: 531px) and (max-width: 585px) {
 
+    /*Especificidad 003*/
     header nav a{
         font-size: 0.9em;
     }
+}
+#mapa {
+    width: 100%;
+    height: 40em; /* Define un tamaño explícito */
+    
+}
+
+svg{
+    width: 100%;
+    height: 60vh;
+}
+
+article img{
+    width: 75vh;
 }

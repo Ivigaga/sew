@@ -1,0 +1,38 @@
+
+
+/* Para una escala proporcional según el ancho de la pantalla */
+table {
+    width: 100%;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 1.5vw; /* Ajuste dinámico del tamaño de fuente */
+}
+
+table th,
+table td {
+    text-align: center;
+    font-size: 1vw; /* Ajuste dinámico del tamaño de fuente */
+}
+
+/* Usar media queries para tamaños más pequeños */
+@media (max-width: 768px) { /* Tablets y móviles grandes */
+    table caption {
+        font-size: 3vw;
+    }
+    table th,
+    table td {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 480px) { /* Móviles pequeños */
+    table caption {
+        font-size: 4vw;
+    }
+    table th,
+    table td {
+        font-size: 3vw;
+    }
+}

@@ -1,0 +1,44 @@
+body section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los artículos pasen a la siguiente fila si no caben */
+    gap: 1.5em; /* Espacio entre artículos */
+    justify-content: center; /* Alineación de los artículos al inicio */
+}
+
+body article {
+    display: grid;
+    grid-template-columns: auto; /* Una sola columna */
+    grid-template-rows: auto auto; /* Dos filas: una para la imagen y otra para el título */
+    gap: 0em; /* Espacio mínimo entre imagen y título */
+    flex: 1 1 30%; /* Tamaño flexible para cada artículo */
+    background-color: aquamarine;
+    box-sizing: border-box;
+    border-radius: 4%;
+    padding: 1em;
+    max-width: 30%;
+    text-align: center;
+    border: 0.25em solid black; /* Añadido borde negro */
+}
+
+body article img {
+    grid-column: 1/-1; /* La imagen ocupa toda la columna */
+    width: auto; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    min-width: 20%; /* Ajuste mínimo de ancho */
+    max-width: 100%; /* Evita que se estire más allá de su contenedor */
+    justify-self: start; /* Alinea la imagen a la izquierda */
+    align-self: start; /* Alinea la imagen en la parte superior de la celda */
+}
+
+body article h3 {
+    grid-column: 1/-1; /* El título ocupa toda la columna */
+    margin-top: 0.2em; /* Muy poco espacio entre la imagen y el h4 */
+    text-align: center; /* Centra el texto dentro del h4 */
+    font-size: 1em;
+}
+
+body article p {
+    grid-column: 1 / -1; /* Ocupa ambas columnas */
+    margin: 0.5em 0;
+    font-size: 1em;
+}

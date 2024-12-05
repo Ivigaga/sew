@@ -1,0 +1,97 @@
+body main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-content: center;
+}
+
+body main div {
+  background-color: rgba(0, 0, 0, 0.63);
+  border: 0.7em solid #000000;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+body main h2 {
+  grid-column: 1 / -1;
+  /* Hace que el h2 ocupe toda la fila */
+  text-align: center;
+}
+
+body main p {
+  grid-column: 1 / -1;
+  /* Hace que el h2 ocupe toda la fila */
+  text-align: center;
+}
+
+body button:first-of-type {
+  grid-column: 2;
+  text-align: center;
+}
+
+body button:last-of-type {
+  grid-column: 3;
+  text-align: center;
+}
+
+@keyframes lightOn {
+  0% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes out {
+  0% {
+    background-color: red;
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.63);
+  }
+}
+
+
+main.load div {
+  animation: lightOn 0.5s forwards;
+}
+
+main.load div:first-of-type {
+  animation-delay: 0s;
+
+}
+
+main.load div:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+
+main.load div:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+main.load div:nth-of-type(4) {
+  animation-delay: 1.5s;
+}
+
+main.load.unload div {
+  animation: out 0.1s forwards;
+}
+
+form {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-content: center;
+}
+
+form input{
+  text-align: center;
+}
+form input:last-of-type{
+  grid-column: 2 / 4;
+  justify-self: center; /* Centra el input dentro de su celda */
+}

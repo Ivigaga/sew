@@ -1,3 +1,4 @@
+/*Especificidad 001*/
 header{
     display: flex;
     flex-direction: row;
@@ -5,7 +6,7 @@ header{
     align-items: baseline;
     justify-content: space-between;
 }
-
+/*Especificidad 001*/
 nav{
     align-self: flex-end;
     margin-left: auto;

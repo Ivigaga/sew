@@ -1,0 +1,72 @@
+body button{
+    position: fixed;
+    right:14%;
+    font-size: 1.2em;
+}
+section{
+    width: 65%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.25em;
+    margin: 1em;         /* Centra la sección en la página */
+    padding-left: 17.5%;
+}
+
+section h2{
+    flex: 1 1 100%;     
+    text-align: center;
+    margin-bottom: 2%;     
+}
+
+section article{
+    flex: 1 1 calc(25% - 1em); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    border: 0.2em solid #000000;
+    border-radius: 1em;
+    background-color: #3099fc;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    height: 15em;
+    width: 2em;
+
+}
+
+article[data-state=flip] {
+    transform: rotateY(180deg);
+}
+article h3{
+    text-align: center;
+    font-size: 1.5em;
+    backface-visibility: hidden;
+}
+
+section article img{
+    margin: 0;
+    position: absolute;
+    width: 80%;
+    max-height: 90%;                 /* La imagen ocupará el 100% del ancho del contenedor */
+    height: auto;                /* Mantiene la proporción de la imagen */
+    object-fit: contain;         /* Asegura que la imagen se escale sin perder proporciones */
+    display: block;        /* Elimina el espacio extra debajo de la imagen */
+    backface-visibility: hidden;
+
+}
+
+article img {
+    transform: rotateY(180deg);
+}
+
+article[data-state=flip] {
+    transform: rotateY(180deg);
+}
+
+article[data-state=revealed] {
+    transform: rotateY(180deg);
+}
