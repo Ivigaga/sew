@@ -35,10 +35,10 @@
         </nav>
     </header>
     <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | <a title="Juegos" href="juegos.html">Juegos</a>  | Semáforo</p>
-    <nav>
-        <a title="Memoria" href="memoria.html">Memoria</a>
-        <a title="Semáforo" href="semaforo.html">Semáforo</a>
-    </nav>
+    <ul>
+        <li><a title="Memoria" href="memoria.html">Memoria</a></li>
+        <li><a title="Semáforo" href="semaforo.php">Semáforo</a></li>
+    </ul>
     <main>
     <script>
         var semaforo=new Semaforo();
