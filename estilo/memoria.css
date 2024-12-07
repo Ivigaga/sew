@@ -1,15 +1,15 @@
 body button{
-    margin-left: 86%;
+    margin-left: 80%;
     font-size: 1.2em;
 }
 section{
-    width: 65%;
+    width: 50%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 0.25em;
-    margin: 1em;         /* Centra la sección en la página */
+    gap: 1%;
+    margin: 5%;          /*Centra la sección en la página */
     padding-left: 17.5%;
 }
 
@@ -20,20 +20,19 @@ section h2{
 }
 
 section article{
-    flex: 1 1 calc(25% - 1em); 
-    box-sizing: border-box;
+    flex: 1 1 calc(25% - 4%); 
+    /*box-sizing: border-box;*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 3em;
+    /*padding: 0.5em;*/
     border: 0.2em solid #000000;
     border-radius: 1em;
-    background-color: #3099fc;
+    background-color: #71bafd;
     transform-style: preserve-3d;
     transition: transform 0.5s;
-    height: 15em;
-    width: 2em;
+    height: 15vh;
 
 }
 
@@ -42,7 +41,7 @@ article[data-state=flip] {
 }
 article h3{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 80%;
     backface-visibility: hidden;
 }
 
