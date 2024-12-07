@@ -1,6 +1,6 @@
 body button{
     margin-left: 80%;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 section{
     width: 87%;
@@ -10,7 +10,7 @@ section{
     justify-content: space-around;
     align-content: center;
     gap: 0.5%;
-    margin-top: 5%;          /*Centra la sección en la página */
+    margin-top: 2%;          /*Centra la sección en la página */
     margin-left: 5%;
 }
 
