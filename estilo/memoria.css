@@ -42,7 +42,8 @@ article[data-state=flip] {
 }
 article h3{
     text-align: center;
-    font-size: 80%;
+    font-size: 120%;
+    font-weight: bolder;
     backface-visibility: hidden;
 }
 
