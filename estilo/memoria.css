@@ -63,6 +63,9 @@ section article img{
 article img {
     transform: rotateY(180deg);
 }
+article h3 {
+    transform: rotateY(0deg);
+}
 
 article[data-state=flip] {
     transform: rotateY(180deg);
@@ -72,9 +75,3 @@ article[data-state=revealed] {
     transform: rotateY(180deg);
 }
 
-article[data-state=flip] h3 {
-    visibility: hidden;
-}
-article[data-state=revealed] h3 {
-    visibility: hidden;
-}
