@@ -75,3 +75,6 @@ article[data-state=revealed] {
 article[data-state=flip] h3 {
     visibility: hidden;
 }
+article[data-state=revealed] h3 {
+    visibility: hidden;
+}
