@@ -35,6 +35,7 @@ section article{
     transition: transform 0.5s;
     height: 18vh;
     margin-bottom: 0.5%;
+    
 }
 
 article[data-state=flip] {
@@ -69,4 +70,8 @@ article[data-state=flip] {
 
 article[data-state=revealed] {
     transform: rotateY(180deg);
+}
+
+article[data-state=flip] h3 {
+    visibility: hidden;
 }
