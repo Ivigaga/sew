@@ -6,7 +6,7 @@ body button{
     cursor: help;
 }
 section{
-    width: 90%;
+    width: 88%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +14,7 @@ section{
     align-content: center;
     gap: 0.5%;
     margin-top: 2%;          /*Centra la sección en la página */
-    margin-left: 5%;
+    margin-left: 6%;
 }
 
 section h2{
