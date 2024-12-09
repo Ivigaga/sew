@@ -1,9 +1,12 @@
 body button{
     margin-left: 80%;
     font-size: 1.5em;
+    background-color: #004E7A;
+    color: #FFFFFF;
+    cursor: help;
 }
 section{
-    width: 87%;
+    width: 94%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -11,7 +14,7 @@ section{
     align-content: center;
     gap: 0.5%;
     margin-top: 2%;          /*Centra la sección en la página */
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 section h2{
@@ -35,6 +38,7 @@ section article{
     transition: transform 0.5s;
     height: 18vh;
     margin-bottom: 0.5%;
+    cursor: pointer;
     
 }
 
@@ -60,15 +64,12 @@ section article img{
 
 }
 
+
 article img {
     transform: rotateY(180deg);
 }
 article h3 {
     transform: rotateY(0deg);
-}
-
-article[data-state=flip] {
-    transform: rotateY(180deg);
 }
 
 article[data-state=revealed] {
