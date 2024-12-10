@@ -1,0 +1,35 @@
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 2%;
+    border-style: solid;
+    border-radius: 1em;
+    align-content: center;
+    width: 70%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+}
+
+section{
+    width: 50%;
+    height: 80%;
+    border-style: solid;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    margin: 10%;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+article p{
+    text-align: center;
+    font-size: 1.7vw;
+    
+}
