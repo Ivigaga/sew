@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta name="author" content="Iván García García" />
+    <meta name="description" content= />
+    <meta name="keywords" content="F1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Datos que describen el documento -->
+    <link rel="icon" href="multimedia/imagenes/icono.ico" sizes="48x48" 
+        type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/libre.css" />
+    <meta charset="UTF-8" />
+    <script src="js/libre.js"></script>
+    <title>F1 Desktop: Libre</title>
+</head>
+<script>
+    loadAudio();
+</script>
+<body>
+    <header>
+        <!-- Datos con el contenidos que aparece en el navegador -->
+        <h1><a title="Inicio" href="index.html">F1 Desktop</a></h1>
+        <nav>
+            <a title="Inicio" href="index.html">Inicio</a>
+            <a title="Piloto" href="piloto.html">Piloto</a>
+            <a title="Notocias" href="noticias.html">Noticias</a>
+            <a title="Calendario" href="calendario.html">Calendario</a>
+            <a title="Meteorología" href="meteorologia.html">Meteorología</a>
+            <a title="Circuito" href="circuito.html">Circuito</a>
+            <a title="Viajes" href="viajes.php">Viajes</a>
+            <a title="Juegos" class="active" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | Juegos </p>
+    <h2>Juegos</h2>
+    <ul>
+        <li><a title="Memoria" href="memoria.html">Memoria</a></li>
+        <li><a title="Semáforo" href="semaforo.php">Semáforo</a></li>
+        <li><a title="Semáforo" href="libre.html">Libre</a></li>
+    </ul>
+    <canvas width="1000" height="100"></canvas>
+    <article>
+        <section id="s_Nico_Hulkenberg" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/Nico_Hulkenberg.png"/></section>
+        <section id="s_Carlos_Sainz" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/Carlos_Sainz.png"/></section>
+        <section id="s_Fernando_Alonso" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/fernando-alonso-2024.png"/></section>
+        <section id="s_Franco_Colapinto" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/Franco_Colapinto.png"/></section>
+        <section id="s_George_Russell" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/George_Russell.png"/></section>
+        <section id="s_Kevin_Magnussen" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/kevin-magnussen-2024.png"/></section>
+        <section id="s_Lando_Norris" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/lando-norris-04.png"/></section>
+        <section id="s_Max_Verstappen" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"><img src="multimedia/imagenes/max-verstappen.png"/></section>
+    </article>
+    <article>
+        <p id="Fernando_Alonso" draggable="true" ondragstart="dragstartHandler(event)">Fernando Alonso</p>
+        <p id="Max_Verstappen" draggable="true" ondragstart="dragstartHandler(event)">Max Verstappen</p>
+        <p id="Franco_Colapinto" draggable="true" ondragstart="dragstartHandler(event)">Franco Colapinto</p>
+        <p id="Lando_Norris" draggable="true" ondragstart="dragstartHandler(event)">Lando Norris</p>
+        <p id="Nico_Hulkenberg" draggable="true" ondragstart="dragstartHandler(event)">Nico Hülkenberg</p>
+        <p id="Kevin_Magnussen" draggable="true" ondragstart="dragstartHandler(event)">Kevin Magnussen</p>
+        <p id="Carlos_Sainz" draggable="true" ondragstart="dragstartHandler(event)">Carlos Sainz</p>
+        <p id="George_Russell" draggable="true" ondragstart="dragstartHandler(event)">Geroge Russell</p>
+    </article>
+</body>
+</html>
