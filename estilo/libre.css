@@ -1,4 +1,4 @@
-article{
+body article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 2%;
@@ -10,7 +10,7 @@ article{
     margin-left: 15%;
 }
 
-section{
+body article article{
     width: 50%;
     height: 80%;
     border-style: solid;
@@ -32,4 +32,8 @@ article p{
     text-align: center;
     font-size: 1.7vw;
     
+}
+h3{
+    font-size: 2em;
+    text-align: center;
 }
