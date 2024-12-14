@@ -62,6 +62,9 @@ class Union {
 
     // Eventos táctiles
     touchstartHandler(ev) {
+        if (this.audioBuffer == null) {
+            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
         ev.preventDefault();
         const targetId = ev.target.id;
         this.draggedElement = document.getElementById(targetId);
@@ -87,7 +90,6 @@ class Union {
                 if (encabezado != null) target.parentElement.removeChild(encabezado);
             }
         }
-        this.draggedElement.style.position = 'static'; // Restaurar la posición
         this.checkAndPlayAudio();
 
 
@@ -99,11 +101,12 @@ class Union {
         let article = document.querySelector("body article:last-of-type");
         if (article.children.length <= 0) {
             document.querySelector("body").removeChild(article);
-            this.playAudio();
-            this.drawMessage();
             window.onresize = () => {
                 this.drawMessage(); // Redibujar el mensaje después de cambiar el tamaño
             };
+            this.playAudio();
+            this.drawMessage();
+           
         }
     }
 
