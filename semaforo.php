@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
     <meta name="author" content="Iván García García" />
-    <meta name="description" content="Juego de Memoria" />
+    <meta name="description" content="Juego de Semáforo" />
     <meta name="keywords" content="F1,juegos, semáforo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Datos que describen el documento -->
@@ -38,6 +38,8 @@
     <ul>
         <li><a title="Memoria" href="memoria.html">Memoria</a></li>
         <li><a title="Semáforo" href="semaforo.php">Semáforo</a></li>
+        <li><a title="Unión" href="union.html">Unión</a></li>
+        <li><a title="Podios" href="php/podios.php">Podios</a></li>
     </ul>
     <main>
     <script>

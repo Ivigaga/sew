@@ -4,6 +4,7 @@ body button{
     background-color: #004E7A;
     color: #FFFFFF;
     cursor: help;
+    margin-bottom: 2%;
 }
 section{
     width: 88%;
@@ -44,6 +45,7 @@ section article{
 
 article[data-state=flip] {
     transform: rotateY(180deg);
+    cursor: auto;
 }
 article h3{
     text-align: center;
@@ -74,5 +76,6 @@ article h3 {
 
 article[data-state=revealed] {
     transform: rotateY(180deg);
+    cursor: auto;
 }
 

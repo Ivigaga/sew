@@ -50,12 +50,12 @@ const elements = [
 ]
 
 class Memoria {
-
     constructor() {
         this.hasFlippedCard = false;
         this.lockBoard = false;
         this.firstCard = null;
         this.secondCard = null;
+        this.cardsLeft=0;
         this.shuffleElements();
         this.createElements();
         this.addEventListeners();
@@ -75,7 +75,7 @@ class Memoria {
             this.firstCard.removeAttribute('data-state');
             this.secondCard.removeAttribute('data-state');
             this.resetBoard();
-          }, 1000);
+          }, 750);
     }
 
     resetBoard(){
@@ -92,11 +92,13 @@ class Memoria {
     disableCards(){
         this.firstCard.setAttribute('data-state', 'revealed');
         this.secondCard.setAttribute('data-state', 'revealed');
+        this.cardsLeft-=2;
         this.resetBoard();
     }
 
     createElements() {
         var section = document.querySelector("body section");
+        this.cardsLeft=elements.length;
         for (let i = 0; i < elements.length; i++) {
             var card = document.createElement("article");
             card.setAttribute("data-element", elements[i].element);
@@ -125,6 +127,12 @@ class Memoria {
                 this.firstCard=card;
                 this.hasFlippedCard=true;
             }
+        }
+        if(this.cardsLeft<=0){
+            setTimeout(() => {
+                alert("¡Has Ganado!");
+              }, 500);
+           
         }
     }
 
