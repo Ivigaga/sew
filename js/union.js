@@ -64,10 +64,6 @@ class Union {
     touchstartHandler(ev) {
         if (this.audioBuffer == null) {
             this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-            var mensaje=document.createElement("h4");
-            mensaje.innerText="A";
-            mensaje.innerText="Fallo aqui 1";
-            document.querySelector("body").appendChild(mensaje);
         }
         ev.preventDefault();
         const targetId = ev.target.id;
