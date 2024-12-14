@@ -69,12 +69,6 @@ class Union {
 
     touchmoveHandler(ev) {
         ev.preventDefault();
-        if (this.draggedElement) {
-            let touch = ev.touches[0];
-            this.draggedElement.style.position = 'absolute';
-            this.draggedElement.style.left = `${touch.pageX - this.draggedElement.offsetWidth / 2}px`;
-            this.draggedElement.style.top = `${touch.pageY - this.draggedElement.offsetHeight / 2}px`;
-        }
     }
 
     touchendHandler(ev) {
@@ -87,6 +81,18 @@ class Union {
         }
         this.draggedElement.style.position = 'static'; // Restaurar la posición
         this.checkAndPlayAudio();
+
+
+        if ("s_" + this.draggedElement.id == target.id) {
+            var encabezado = target.querySelector("h4");
+            if (encabezado != null) target.removeChild(encabezado);
+            target.appendChild(this.draggedElement);
+        } else if (target.parentElement && "s_" + data == target.parentElement.id) {
+            target.parentElement.appendChild(this.draggedElement);
+            var encabezado = target.parentElement.querySelector("h4");
+            if (encabezado != null) target.parentElement.removeChild(encabezado);
+        }
+
     }
 
     checkAndPlayAudio() {
