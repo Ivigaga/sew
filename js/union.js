@@ -64,6 +64,7 @@ class Union {
     touchstartHandler(ev) {
         if (this.audioBuffer == null) {
             this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            this.playAudio();
         }
         ev.preventDefault();
         const targetId = ev.target.id;
@@ -134,13 +135,17 @@ class Union {
             console.error("Elemento <audio> no encontrado.");
             return;
         }
-
+        mensaje=document.createElement("h4");
+        mensaje.innerText="A"
+        document.querySelector("body").appendChild(mensaje);
         if (this.audioContext.state === "suspended") {
             this.audioContext.resume();
         }
 
         audioElement.play().catch((error) => {
             console.error("Error al reproducir el audio:", error);
+            mensaje.innerText="Fallo aqui";
+            document.querySelector("body").appendChild(mensaje);
         });
     }
 
