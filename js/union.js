@@ -76,22 +76,22 @@ class Union {
         const touch = ev.changedTouches[0];
         const target = document.elementFromPoint(touch.clientX, touch.clientY);
 
-        if (target && target.matches('section')) {
-            target.appendChild(this.draggedElement);
+        if (target) {
+            if ("s_" + this.draggedElement.id == target.id) {
+                var encabezado = target.querySelector("h4");
+                if (encabezado != null) target.removeChild(encabezado);
+                target.appendChild(this.draggedElement);
+            } else if (target.parentElement && "s_" + data == target.parentElement.id) {
+                target.parentElement.appendChild(this.draggedElement);
+                var encabezado = target.parentElement.querySelector("h4");
+                if (encabezado != null) target.parentElement.removeChild(encabezado);
+            }
         }
         this.draggedElement.style.position = 'static'; // Restaurar la posición
         this.checkAndPlayAudio();
 
 
-        if ("s_" + this.draggedElement.id == target.id) {
-            var encabezado = target.querySelector("h4");
-            if (encabezado != null) target.removeChild(encabezado);
-            target.appendChild(this.draggedElement);
-        } else if (target.parentElement && "s_" + data == target.parentElement.id) {
-            target.parentElement.appendChild(this.draggedElement);
-            var encabezado = target.parentElement.querySelector("h4");
-            if (encabezado != null) target.parentElement.removeChild(encabezado);
-        }
+        
 
     }
 
