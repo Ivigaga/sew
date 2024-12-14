@@ -62,11 +62,9 @@ class Union {
 
     // Eventos táctiles
     touchstartHandler(ev) {
-        if (this.audioBuffer == null) {
-            this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
-        }
+        
         ev.preventDefault();
-        const targetId = ev.target.id;
+        var targetId = ev.target.id;
         this.draggedElement = document.getElementById(targetId);
     }
 
@@ -76,10 +74,13 @@ class Union {
 
     touchendHandler(ev) {
         ev.preventDefault();
-        const touch = ev.changedTouches[0];
-        const target = document.elementFromPoint(touch.clientX, touch.clientY);
+        var touch = ev.changedTouches[0];
+        var target = document.elementFromPoint(touch.clientX, touch.clientY);
 
         if (target) {
+            if (this.audioBuffer == null) {
+                this.audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
             if ("s_" + this.draggedElement.id == target.id) {
                 var encabezado = target.querySelector("h4");
                 if (encabezado != null) target.removeChild(encabezado);
@@ -111,18 +112,18 @@ class Union {
     }
 
     canPlayFormat(format) {
-        const audio = new Audio();
+        var audio = new Audio();
         return audio.canPlayType(`audio/${format}`).replace(/^no/, '') !== '';
     }
 
     loadAudioFromElement() {
-        const audioElement = document.querySelector("body audio");
+        var audioElement = document.querySelector("body audio");
         if (!audioElement) {
             console.error("Elemento <audio> no encontrado.");
             return;
         }
 
-        const mediaElementSource = this.audioContext.createMediaElementSource(audioElement);
+        var mediaElementSource = this.audioContext.createMediaElementSource(audioElement);
         mediaElementSource.connect(this.audioContext.destination);
 
         console.log("Audio listo para reproducir.");
@@ -149,18 +150,18 @@ class Union {
     }
 
     drawMessage() {
-        const canvas = document.querySelector('body canvas');
+        var canvas = document.querySelector('body canvas');
         canvas.width = window.innerWidth - 100;
-        const canvas1 = canvas.getContext('2d');
+        var canvas1 = canvas.getContext('2d');
 
         canvas1.font = 'italic 5vh sans-serif';
         canvas1.strokeStyle = "rgba(255, 0, 0, 1)";
 
-        const message = "¡Has Ganado!";
+        var message = "¡Has Ganado!";
 
-        const textWidth = canvas1.measureText(message).width;
-        const x = (canvas.width - textWidth) / 2;
-        const y = canvas.height / 2;
+        var textWidth = canvas1.measureText(message).width;
+        var x = (canvas.width - textWidth) / 2;
+        var y = canvas.height / 2;
 
         canvas1.strokeText(message, x, y);
     }
