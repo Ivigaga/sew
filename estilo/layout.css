@@ -1,13 +1,15 @@
 /*Especificidad 001*/
-header{
+header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
 }
+
 /*Especificidad 001*/
-nav{
+nav {
     align-self: flex-end;
     margin-left: auto;
 }
+

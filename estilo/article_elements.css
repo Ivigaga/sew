@@ -48,3 +48,17 @@ body article p {
     margin: 0.5em 0;
     font-size: 1em;
 }
+
+/*Especificidad 012*/
+body>label:last-of-type {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+  align-content: center;
+}
+/*Especificidad 001*/
+textarea {
+    grid-column: 1/-1;
+    /* El textarea ocupa la misma columna */
+    width: 20vw;
+}
