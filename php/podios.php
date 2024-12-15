@@ -311,8 +311,8 @@ try {
     <!-- Formulario para importar CSV -->
     <h3>Importar CSV</h3>
     <form action="#" method="POST">
-        <label for="csv_import">Selecciona un archivo CSV para importar:
-        <input type="file" name="csv_import" accept=".csv" required></label>
+        <p>Selecciona un archivo CSV para importar:</p>
+        <input type="file" name="csv_import"  accept=".csv" aria-label="Importar csv" required>
         <button type="submit">Importar CSV</button>
     </form>
 
