@@ -222,7 +222,7 @@ class Database {
         $podiumStats = $this->getPodiumStatsByPilot();
     
         echo "<table id='estadisticas-podios'>";
-        echo "<thead><tr><th></th><th scope='col' id='podios'>Total Podios</th><th scope='col' id='victorias'>Victorias</th><th scope='col' id='segundos'>Segundos</th><th scope='col' id='terceros'>Terceros</th></tr></thead>";
+        echo "<thead><tr><td></td><th scope='col' id='podios'>Total Podios</th><th scope='col' id='victorias'>Victorias</th><th scope='col' id='segundos'>Segundos</th><th scope='col' id='terceros'>Terceros</th></tr></thead>";
         echo "<tbody>";
 
         foreach ($podiumStats as $id => $stat) {
