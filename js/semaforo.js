@@ -65,11 +65,11 @@ class Semaforo {
 
     createRecordForm(time){
         var formulario="<form action='#' method= 'post' name='formulario'>";
-        formulario+="<input type='text' name='nombre'/>";
-        formulario+="<input type='text' name='apellido' />";
-        formulario+="<input type='text' readonly name='dificultad' value="+this.dificulty+" />";
-        formulario+="<input type='text' readonly name='tiempo' value="+time/1000+" />";
-        formulario+="<input type='submit' value='Registrar'/>";
+        formulario+="<input type='text' aria-label='Nombre' name='nombre'/>";
+        formulario+="<input type='text' aria-label='Apellido' name='apellido' />";
+        formulario+="<input type='text'  aria-label='Dificultad' readonly name='dificultad' value="+this.dificulty+" />";
+        formulario+="<input type='text' aria-label='Tiempo' readonly name='tiempo' value="+time/1000+" />";
+        formulario+="<input type='submit' aria-label='Registrar' value='Registrar'/>";
         $("main").append(formulario);
     }
 
