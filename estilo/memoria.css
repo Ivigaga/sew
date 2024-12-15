@@ -1,3 +1,4 @@
+/*Especificidad 002*/
 body button{
     margin-left: 80%;
     font-size: 1.5em;
@@ -6,6 +7,7 @@ body button{
     cursor: help;
     margin-bottom: 2%;
 }
+/*Especificidad 001*/
 section{
     width: 88%;
     height: auto;
@@ -17,13 +19,13 @@ section{
     margin-top: 2%;          /*Centra la sección en la página */
     margin-left: 6%;
 }
-
+/*Especificidad 002*/
 section h2{
     flex: 1 1 100%;     
     text-align: center;
     margin-bottom: 2%;     
 }
-
+/*Especificidad 002*/
 section article{
     flex: 1 1 calc(25% - 4%); 
     /*box-sizing: border-box;*/
@@ -42,18 +44,19 @@ section article{
     cursor: pointer;
     
 }
-
+/*Especificidad 011*/
 article[data-state=flip] {
     transform: rotateY(180deg);
     cursor: auto;
 }
+/*Especificidad 002*/
 article h3{
     text-align: center;
     font-size: 120%;
     font-weight: bolder;
     backface-visibility: hidden;
 }
-
+/*Especificidad 003*/
 section article img{
     margin: 0;
     position: absolute;
@@ -66,14 +69,15 @@ section article img{
 
 }
 
-
+/*Especificidad 002*/
 article img {
     transform: rotateY(180deg);
 }
+/*Especificidad 002*/
 article h3 {
     transform: rotateY(0deg);
 }
-
+/*Especificidad 011*/
 article[data-state=revealed] {
     transform: rotateY(180deg);
     cursor: auto;

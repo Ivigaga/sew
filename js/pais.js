@@ -56,7 +56,7 @@ class Pais{
             method: 'GET',
             success: function(datos) {
                 // Agrupar pronósticos por día
-                $("body").append("<section></section>");
+                $("body").append("<section><h3>Tiempo</h3></section>");
                 datos.list.forEach(function(item) {
                     var fecha = new Date(item.dt_txt);
     
@@ -73,11 +73,11 @@ class Pais{
                         var humedad = item.main.humidity + "%";
                         var lluvia=  item.rain && item.rain["3h"] ? item.rain["3h"] :0;
                         var icono = item.weather[0].icon;
-    
+                        var descripcion = item.weather[0].description;
                         // Crear contenido HTML
                         var contenidoHTML = "<article>";
-                        contenidoHTML += "<h3>" + dia + "</h3>";
-                        contenidoHTML += "<img src='https://openweathermap.org/img/wn/" + icono + "@2x.png' />";
+                        contenidoHTML += "<h4>" + dia + "</h4>";
+                        contenidoHTML += "<img alt='" + descripcion + "' src='https://openweathermap.org/img/wn/" + icono + "@2x.png' />";
                         contenidoHTML += "<p>Temperatura: " + temperatura + " ºC</p>";
                         contenidoHTML += "<p>Temperatura Mínima: " + tempMin + " ºC</p>";
                         contenidoHTML += "<p>Temperatura Máxima: " + tempMax + " ºC</p>";
@@ -94,44 +94,6 @@ class Pais{
                 $("body").append("<h3>¡Tenemos problemas! No puedo obtener datos de <a href='http://openweathermap.org'>OpenWeatherMap</a></h3>");
             }
         });
-            /*
-            success: function(datos){
-                
-                
-                    //Presentación del archivo XML en modo texto
-                    //$("h5").text((new XMLSerializer()).serializeToString(datos));
-                
-                    //Extracción de los datos contenidos en el XML
-                    
-
-                  
-                    var temperatura           = $('temperature',datos).attr("value");
-                    var temperaturaMin        = $('temperature',datos).attr("min");
-                    var temperaturaMax        = $('temperature',datos).attr("max");
-                    var temperaturaUnit       = $('temperature',datos).attr("unit");
-                    var humedad               = $('humidity',datos).attr("value");
-                    var humedadUnit           = $('humidity',datos).attr("unit");
-                    var precipitacionValue    = $('precipitation',datos).attr("value");
-                    var precipitacionMode     = $('precipitation',datos).attr("mode");
-                    
-                    var stringDatos =  "<ul>";
-                        stringDatos += "<li>Temperatura: " + temperatura + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura mínima: " + temperaturaMin + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura máxima: " + temperaturaMax + " grados Celsius</li>";
-                        stringDatos += "<li>Temperatura (unidades): " + temperaturaUnit + "</li>";
-                        stringDatos += "<li>Humedad: " + humedad + " " + humedadUnit + "</li>";
-                        stringDatos += "<li>Precipitación valor: " + precipitacionValue + "</li>";
-                        stringDatos += "<li>Precipitación modo: " + precipitacionMode + "</li>";
-                    
-                    $("p:last").html(stringDatos);                  
-                },
-            error:function(){
-                $("h3").html("¡Tenemos problemas! No puedo obtener XML de <a href='http://openweathermap.org'>OpenWeatherMap</a>"); 
-                $("h4").remove();
-                $("h5").remove();
-                $("p").remove();
-                }
-                */
         
     }
 }

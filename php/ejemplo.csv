@@ -1,0 +1,10 @@
+Carreras,ID,Fecha,Circuito,TemporadaID
+25,2024-03-02,"Bahrain International Circuit",1
+Escuderias,ID,Nombre,Pais
+12,Ferrari,Italia
+Pilotos,ID,Nombre,EscuderiaID,Nacionalidad
+21,"Charles Leclerc",1,Monegasca
+Podios,ID,CarreraID,PilotoID,Posicion
+74,24,1,3
+Temporadas,ID,Year
+2,2023

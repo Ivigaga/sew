@@ -1,10 +1,16 @@
+/*Especificidad 002*/
 body section {
     display: flex;
     flex-wrap: wrap; /* Permite que los artículos pasen a la siguiente fila si no caben */
     gap: 1.5em; /* Espacio entre artículos */
     justify-content: center; /* Alineación de los artículos al inicio */
 }
-
+/*Especificidad 003*/
+body section h3 {
+    width: 100%;
+    text-align: center;
+}
+/*Especificidad 002*/
 body article {
     display: grid;
     grid-template-columns: auto; /* Una sola columna */
@@ -19,7 +25,7 @@ body article {
     text-align: center;
     border: 0.25em solid black; /* Añadido borde negro */
 }
-
+/*Especificidad 003*/
 body article img {
     grid-column: 1/-1; /* La imagen ocupa toda la columna */
     width: auto; /* Ajusta el tamaño de la imagen */
@@ -29,14 +35,14 @@ body article img {
     justify-self: start; /* Alinea la imagen a la izquierda */
     align-self: start; /* Alinea la imagen en la parte superior de la celda */
 }
-
-body article h3 {
+/*Especificidad 003*/
+body article h4 {
     grid-column: 1/-1; /* El título ocupa toda la columna */
     margin-top: 0.2em; /* Muy poco espacio entre la imagen y el h4 */
     text-align: center; /* Centra el texto dentro del h4 */
     font-size: 1em;
 }
-
+/*Especificidad 003*/
 body article p {
     grid-column: 1 / -1; /* Ocupa ambas columnas */
     margin: 0.5em 0;

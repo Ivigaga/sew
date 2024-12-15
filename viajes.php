@@ -84,12 +84,12 @@ class Moneda{
     <button onclick="viajes.getMapaEstaticoGoogle()">Mostrar mapa estático</button>
     <button onclick="viajes.initMap()">Mostrar mapa interactivo</button>
     <div id="mapa" ></div>
-    <h3>Carrusel de Imágenes</h3>
     <article>
         <?php
         $carrusel=new Carrusel("Spain","Madrid");
         $fotos=$carrusel->generatePhotos();
         print "<article>";
+        print "<h3>Carrusel de Imágenes</h3>";
         for($i=0;$i<10;$i++){
             $imgSrc = $fotos->items[$i]->media->m;
             print "<img alt='Imagen de España' src=\"$imgSrc\" />";

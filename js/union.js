@@ -135,17 +135,12 @@ class Union {
             console.error("Elemento <audio> no encontrado.");
             return;
         }
-        var mensaje=document.createElement("h4");
-        mensaje.innerText="A"
-        document.querySelector("body").appendChild(mensaje);
         if (this.audioContext.state === "suspended") {
             this.audioContext.resume();
         }
-
         audioElement.play().catch((error) => {
             console.error("Error al reproducir el audio:", error);
-            mensaje.innerText="Fallo aqui 2";
-            document.querySelector("body").appendChild(mensaje);
+
         });
     }
 

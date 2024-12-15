@@ -1,3 +1,4 @@
+/*Especificidad 002*/
 body article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -9,7 +10,7 @@ body article{
     margin-bottom: 2%;
     margin-left: 15%;
 }
-
+/*Especificidad 003*/
 body article section{
     width: 50%;
     height: 80%;
@@ -20,19 +21,20 @@ body article section{
     border-radius: 10%;
     margin: 10%;
 }
-
+/*Especificidad 001*/
 img{
     max-width: 100%;
     width: 100%;
     height: auto;
     align-content: center;
 }
-
+/*Especificidad 002*/
 article h4{
     text-align: center;
     font-size: 1.4vw;
     
 }
+/*Especificidad 001*/
 h3{
     font-size: 2em;
     text-align: center;

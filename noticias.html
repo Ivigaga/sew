@@ -37,19 +37,19 @@
     <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | Noticias </p>
     <h2>Noticias</h2>
     <p>
-        <input  type="file" id="archivoTexto" onchange="new Noticias().readInputFile(this.files)"/>
+        <input  type="file" id="archivoTexto" onchange="new Noticias().readInputFile(this.files)" aria-label="Archivo con noticias"/>
 
     </p>
-    <section></section>
+    <section><h3>Noticias</h3></section>
     <h3>Añadir Noticia</h3>
     <p>
-        Título: <input type="text" id="titulo" name="titulo" required/>
+        Título: <input type="text" id="titulo" name="titulo" aria-label="Título de la noticia" required/>
     </p>
     <p>
-        Autor: <input type="text" id="autor" name="autor" required/>
+        Autor: <input type="text" id="autor" name="autor" aria-label="Autor de la noticia" required/>
     </p>
     <p>Contenido:</p>
-    <textarea id="texto" rows="5" cols="40"></textarea>
-    <p><input type="submit" value="Añadir" onclick="new Noticias().addNews()"></p>
+    <textarea id="texto" rows="5" cols="40" aria-label="Contenido de la noticia"></textarea>
+    <p><input type="submit" value="Añadir" onclick="new Noticias().addNews()" aria-label="Añadir noticia"></p>
 </body>
 </html>

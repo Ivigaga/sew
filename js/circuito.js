@@ -50,12 +50,25 @@ class Circuito {
       else if (archivo.type.match(tipoSVG)) {
         var lector = new FileReader();
         lector.onload = function (evento) {
-          const svgContent = lector.result; // Contenido del archivo SVG
+          var svgContent = lector.result; // Contenido del archivo SVG
+          // Crear un contenedor temporal para manipular el SVG
+          var tempDiv = document.createElement("div");
+          tempDiv.innerHTML = svgContent;
+          
+          var svgElement = tempDiv.querySelector("svg"); // Buscar el elemento SVG
+          if (svgElement) {
+            svgElement.setAttribute("version", "1.1"); // Cambiar la versión a 1.1
+          }
+          
           // Limpiar contenido previo y agregar el SVG
-          svg = document.createElement("svg");
-          svg.innerHTML = svgContent;
+          var svg = document.createElement("svg");
+          svg.innerHTML = tempDiv.innerHTML;
+          Array.from(svgElement.attributes).forEach(attr => {
+            svg.setAttribute(attr.name, attr.value);
+          });
+          
           document.querySelector("body").insertBefore(svg, document.querySelector("body div"));
-        }
+        };
         lector.readAsText(archivo);
       }
       else {
@@ -132,7 +145,7 @@ class Circuito {
       }
     }else{
       if(node.nodeName=="foto"){
-        text+="<img src=xml/"+node.attributes[0].textContent+" />"
+        text+="<img alt='"+node.attributes[0].textContent.split(".")[0]+ "' src=xml/"+node.attributes[0].textContent+" />"
       }else if(node.nodeName=="video"){
         text+="<video controls preload='auto'>";
         text+="<source src=xml/"+node.attributes[0].textContent;

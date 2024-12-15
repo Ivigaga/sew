@@ -66,7 +66,7 @@ def prologoSVG(salida):
     """ Escribe en el archivo de salida el prólogo del archivo KML"""
 
     salida.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-    salida.write('<svg xmlns="http://www.w3.org/2000/svg" version="2.0">\n height="50" width="150"')
+    salida.write('<svg xmlns="http://www.w3.org/2000/svg" version="2.0" height="50" width="150">\n')
     salida.write('<polyline points=\n')
     salida.write('"')
 

@@ -34,7 +34,7 @@ class Noticias {
             var articulo = "<article>"
             for (let i = 0; i < partes.length; i++) {
                 if (i == 0) {
-                    articulo += "<h3>" + partes[i] + "</h3>";
+                    articulo += "<h4>" + partes[i] + "</h4>";
                 } else {
                     articulo += "<p>" + partes[i] + "</p>";
                 }
@@ -46,9 +46,9 @@ class Noticias {
     }
 
     addNews() {
-        var titulo = $('#titulo').val();  // Campo Título
-        var autor = $('#autor').val();    // Campo Autor
-        var contenido = $('#texto').val();  // Campo Contenido
+        var titulo = $('body p:nth-of-type(3) input').val();  // Campo Título
+        var autor = $('body p:nth-of-type(4) input').val();    // Campo Autor
+        var contenido = $('body textarea').val();  // Campo Contenido
 
         if (titulo.trim() != "" && autor.trim() != "" && contenido.trim() != "") {
             var noticia = [titulo+"_"+contenido+"_"+autor];
