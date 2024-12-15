@@ -37,7 +37,7 @@
     <p>Estás en <a title="Inicio" href="index.html">Inicio</a> | Noticias </p>
     <h2>Noticias</h2>
     <p>
-        <label for="archivoTexto">Archivo:</label><input  type="file" id="archivoTexto" onchange="new Noticias().readInputFile(this.files)"/>
+        <label for="archivoTexto">Archivo: </label><input  type="file" id="archivoTexto" onchange="new Noticias().readInputFile(this.files)"/>
 
     </p>
     <section><h3>Noticias</h3></section>
@@ -48,8 +48,8 @@
     <p>
         <label for="autor">Autor:</label> <input type="text" id="autor" name="autor"  required/>
     </p>
-    <p>Contenido:</p>
-    <textarea id="texto" rows="5" cols="40" aria-label="Contenido de la noticia"></textarea>
+    <label for="texto">Contenido:</label>
+    <textarea id="texto" rows="5" cols="40" ></textarea>
     <p><input type="submit" value="Añadir" onclick="new Noticias().addNews()" aria-label="Añadir noticia"></p>
 </body>
 </html>
